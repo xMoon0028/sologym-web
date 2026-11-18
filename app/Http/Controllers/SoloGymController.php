@@ -23,7 +23,11 @@ class SoloGymController extends Controller
             $apkSize = $apkSize . ' MB';
         }
         $apkSha256 = $apkExists ? hash_file('sha256', $apkPath) : '67d3d5f9b6213f1a96bb7a823e9789be1496470b457db2900225fce77457bb98';
-        $downloadCount = Cache::get('sologym_apk_downloads', 1284);
+        try {
+            $downloadCount = Cache::get('sologym_apk_downloads', 1284);
+        } catch (\Throwable $e) {
+            $downloadCount = 1284;
+        }
 
         $literature = [
             [
@@ -187,7 +191,11 @@ class SoloGymController extends Controller
             abort(404, 'SoloGym APK package is temporarily unavailable.');
         }
 
-        Cache::increment('sologym_apk_downloads');
+        try {
+            Cache::increment('sologym_apk_downloads');
+        } catch (\Throwable $e) {
+            // Safe fallback
+        }
 
         return response()->download($apkPath, 'SoloGym-v1.0.0.apk', [
             'Content-Type' => 'application/vnd.android.package-archive',

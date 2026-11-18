@@ -50,5 +50,5 @@ RUN php artisan config:clear && \
 ENV PORT=10000
 EXPOSE 10000
 
-# Start Laravel built-in server bound to 0.0.0.0 and dynamic Render PORT
-CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"]
+# Start Laravel: ensure sqlite file permissions and run migrations before serving
+CMD ["sh", "-c", "touch database/database.sqlite && chmod 777 database/database.sqlite && php artisan migrate --force 2>/dev/null; php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"]
