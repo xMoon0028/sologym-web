@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoloGym • Science-Backed Offline-First Gym Tracker & Trainer Mascot</title>
     <meta name="description" content="SoloGym is a 100% free, offline-first gym tracking application with an adaptive gym trainer mascot, 3-tier exercise safety hierarchy, calibrated Olympic plate calculator, and Navy body composition analytics.">
+    <meta name="appbuildersph-verification" content="9cfgnryqlfbcukddeb9bheb9kxrkzjng">
     <link rel="icon" type="image/png" href="{{ asset('assets/images/app_logo.png') }}">
     <link rel="stylesheet" href="{{ asset('css/sologym.css') }}">
 </head>
