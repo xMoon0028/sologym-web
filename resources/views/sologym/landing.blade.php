@@ -151,19 +151,25 @@
                             </button>
                         </div>
 
-                        <!-- Quick Biometrics Row -->
-                        <div class="screen-metric-row" style="margin-bottom:0;">
-                            <div class="metric-pill">
-                                <div class="label">Streak</div>
-                                <div class="val">14 Days</div>
+                        <!-- Real App Body Composition Quick Card -->
+                        <div class="app-body-comp-card">
+                            <div class="app-card-header">
+                                <span class="app-card-title">Body Composition</span>
+                                <span class="app-card-action">Analytics &gt;</span>
                             </div>
-                            <div class="metric-pill">
-                                <div class="label">Navy BF%</div>
-                                <div class="val">14.8%</div>
-                            </div>
-                            <div class="metric-pill">
-                                <div class="label">Lean Mass</div>
-                                <div class="val" style="color:var(--neon-cyan)">63.9 kg</div>
+                            <div class="app-comp-metrics">
+                                <div class="comp-col">
+                                    <span class="comp-label">Weight</span>
+                                    <span class="comp-val">75.0 kg</span>
+                                </div>
+                                <div class="comp-col">
+                                    <span class="comp-label">Body Fat</span>
+                                    <span class="comp-val" style="color:var(--neon-green)">14.8%</span>
+                                </div>
+                                <div class="comp-col">
+                                    <span class="comp-label">Lean Mass</span>
+                                    <span class="comp-val" style="color:var(--neon-cyan)">63.9 kg</span>
+                                </div>
                             </div>
                         </div>
 
