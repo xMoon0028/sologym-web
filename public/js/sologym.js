@@ -9,13 +9,56 @@ document.addEventListener('DOMContentLoaded', () => {
     initCopyChecksum();
 });
 
-/* 1. Mascot State Switcher */
+/* 1. Mascot State & Persona Switcher */
 function initMascotSwitcher() {
     const tabs = document.querySelectorAll('.state-tab');
+    const personaCards = document.querySelectorAll('.persona-item-card');
     const mascotImg = document.getElementById('mascot-display-img');
     const mascotQuote = document.getElementById('mascot-quote-text');
     const mascotTag = document.getElementById('mascot-state-tag');
 
+    // Persona Selection
+    personaCards.forEach(card => {
+        card.addEventListener('click', () => {
+            personaCards.forEach(c => {
+                c.classList.remove('active');
+                const check = c.querySelector('.persona-check');
+                if (check) check.textContent = '○';
+            });
+            card.classList.add('active');
+            const activeCheck = card.querySelector('.persona-check');
+            if (activeCheck) activeCheck.textContent = '✓';
+
+            const name = card.getAttribute('data-name');
+            const tag = card.getAttribute('data-tag');
+            const quote = card.getAttribute('data-greeting') || card.getAttribute('data-quote');
+            const color = card.getAttribute('data-color') || '#00E676';
+            const imgSrc = card.getAttribute('data-image');
+
+            if (mascotImg && imgSrc) {
+                mascotImg.style.opacity = '0.3';
+                setTimeout(() => {
+                    mascotImg.src = imgSrc;
+                    mascotImg.style.borderColor = color;
+                    mascotImg.style.boxShadow = `0 0 35px ${color}45`;
+                    mascotImg.style.opacity = '1';
+                }, 150);
+            }
+
+            if (mascotQuote) {
+                mascotQuote.textContent = `“${quote}”`;
+                mascotQuote.parentElement.style.borderLeftColor = color;
+            }
+
+            if (mascotTag) {
+                mascotTag.textContent = `${name} • ${tag}`;
+                mascotTag.style.color = color;
+                mascotTag.style.backgroundColor = `${color}20`;
+            }
+        });
+    });
+
+    // Emotion States
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
             tabs.forEach(t => t.classList.remove('active'));
@@ -27,11 +70,11 @@ function initMascotSwitcher() {
             const color = tab.getAttribute('data-color') || '#00E676';
 
             if (mascotImg) {
-                mascotImg.style.opacity = '0.4';
+                mascotImg.style.opacity = '0.3';
                 setTimeout(() => {
                     mascotImg.src = imgSrc;
                     mascotImg.style.borderColor = color;
-                    mascotImg.style.boxShadow = `0 0 30px ${color}40`;
+                    mascotImg.style.boxShadow = `0 0 35px ${color}45`;
                     mascotImg.style.opacity = '1';
                 }, 150);
             }

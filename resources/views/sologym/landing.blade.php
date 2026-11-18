@@ -84,30 +84,75 @@
                 </div>
             </div>
 
-            <!-- Interactive Phone Mockup Showcase -->
+            <!-- Real App Sample View (Phone Mockup) -->
             <div class="mockup-container">
                 <div class="phone-mockup">
                     <div class="phone-screen">
-                        <div class="screen-header">
-                            <div class="screen-brand">
-                                <img src="{{ asset('assets/images/app_logo.png') }}" style="width:22px;height:22px;border-radius:4px;" alt="">
-                                <span>SoloGym</span>
-                            </div>
-                            <span style="font-size: 11px; color: var(--neon-green); font-weight: bold; background: rgba(0,230,118,0.15); padding: 2px 8px; border-radius: 4px;">OFFLINE</span>
-                        </div>
-
-                        <!-- Mascot Card inside Mockup -->
-                        <div class="mascot-hero-card">
-                            <img src="{{ asset('assets/images/mascot/mascot_welcoming.jpg') }}" alt="Coach Rex" class="mascot-hero-img">
-                            <div style="font-weight: 800; font-size: 15px; color: #FFF; margin-bottom: 2px;">Coach Rex 🔥</div>
-                            <div style="font-size: 11px; color: var(--neon-green); font-weight: 600; margin-bottom: 6px;">BEAST MODE • LEVEL 3</div>
-                            <div style="font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.3;">
-                                “Welcome back! Ready to set a new PR on chest-supported rows today?”
+                        <!-- Android Status Bar -->
+                        <div class="phone-status-bar">
+                            <span>09:41</span>
+                            <div style="display:flex; align-items:center; gap:6px;">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9z"/></svg>
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
                             </div>
                         </div>
 
-                        <!-- Metrics Row -->
-                        <div class="screen-metric-row">
+                        <!-- Real App Top Bar -->
+                        <div class="app-topbar">
+                            <div class="app-brand-group">
+                                <img src="{{ asset('assets/images/app_logo.png') }}" class="app-brand-logo" alt="SoloGym">
+                                <div>
+                                    <div class="app-title-text">SoloGym</div>
+                                    <div class="app-subtitle-text">Welcome back, Lifter</div>
+                                </div>
+                            </div>
+                            <div class="app-settings-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                            </div>
+                        </div>
+
+                        <!-- Offline Storage Status Banner -->
+                        <div class="app-sync-banner">
+                            <div class="app-sync-left">
+                                <span class="app-sync-dot"></span>
+                                <span>Offline Ready • 100% Up-to-Date</span>
+                            </div>
+                            <div class="app-sync-action">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                                <span>Sync</span>
+                            </div>
+                        </div>
+
+                        <!-- Real App Trainer Mascot Widget -->
+                        <div class="app-mascot-card">
+                            <img src="{{ asset('assets/images/mascot/mascot_active.jpg') }}" alt="Coach Rex" class="app-mascot-avatar">
+                            <div class="app-mascot-info">
+                                <div class="app-mascot-name-row">
+                                    <span class="app-mascot-name">Coach Rex</span>
+                                    <span class="app-mascot-tag">🔥 Beast Mode</span>
+                                </div>
+                                <div class="app-mascot-quote">
+                                    “Welcome back! Today is a day for personal records. Let’s get after it!”
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Real App Next Workout Card -->
+                        <div class="app-next-workout">
+                            <div class="app-next-header">
+                                <span class="app-next-label">NEXT WORKOUT</span>
+                                <span class="app-next-count">5 Exercises</span>
+                            </div>
+                            <div class="app-next-title">Push Day: Chest, Shoulders, Triceps</div>
+                            <button class="app-start-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                <span>Start Workout Session</span>
+                            </button>
+                        </div>
+
+                        <!-- Quick Biometrics Row -->
+                        <div class="screen-metric-row" style="margin-bottom:0;">
                             <div class="metric-pill">
                                 <div class="label">Streak</div>
                                 <div class="val">14 Days</div>
@@ -117,18 +162,31 @@
                                 <div class="val">14.8%</div>
                             </div>
                             <div class="metric-pill">
-                                <div class="label">Tier Focus</div>
-                                <div class="val" style="color:var(--neon-cyan)">Tier 1</div>
+                                <div class="label">Lean Mass</div>
+                                <div class="val" style="color:var(--neon-cyan)">63.9 kg</div>
                             </div>
                         </div>
 
-                        <!-- Exercise Preview Row -->
-                        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 12px; padding: 10px; display: flex; align-items: center; justify-content: space-between;">
-                            <div>
-                                <div style="font-size: 12px; font-weight: bold; color: #FFF;">Chest-Supported Row</div>
-                                <div style="font-size: 10px; color: var(--neon-green);">Tier 1: Machine • 3x 10-12 reps</div>
+                        <!-- Real App Bottom Navigation Bar -->
+                        <div class="app-bottom-nav">
+                            <div class="app-nav-item active">
+                                <div class="app-nav-indicator">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                                </div>
+                                <span>Home</span>
                             </div>
-                            <div style="font-size: 13px; font-weight: 800; color: var(--neon-cyan);">60 kg</div>
+                            <div class="app-nav-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M3 12h18M6.5 6.5v11M17.5 6.5v11"/></svg>
+                                <span>Routine</span>
+                            </div>
+                            <div class="app-nav-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                                <span>Library</span>
+                            </div>
+                            <div class="app-nav-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                                <span>Body Comp</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +198,12 @@
     <section class="pillars">
         <div class="container pillars-grid">
             <div class="pillar-card">
-                <div class="pillar-icon" style="color: var(--neon-green);">🔒</div>
+                <div class="pillar-icon" style="color: var(--neon-green); box-shadow: 0 0 14px var(--neon-green-glow); border-color: rgba(0, 230, 118, 0.3);">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                </div>
                 <div>
                     <div class="pillar-title">100% Offline & Zero Ads</div>
                     <div class="pillar-desc">No login, no cloud outages, no telemetry. Your logs and biometrics stay on your device in local SQLite.</div>
@@ -148,7 +211,12 @@
             </div>
 
             <div class="pillar-card">
-                <div class="pillar-icon" style="color: var(--neon-cyan);">🛡️</div>
+                <div class="pillar-icon" style="color: var(--neon-cyan); box-shadow: 0 0 14px var(--neon-cyan-glow); border-color: rgba(0, 229, 255, 0.3);">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </div>
                 <div>
                     <div class="pillar-title">3-Tier Safety Hierarchy</div>
                     <div class="pillar-desc">Machine-supported volume first. Eliminate axial spinal compression for beginners before heavy loading.</div>
@@ -156,7 +224,11 @@
             </div>
 
             <div class="pillar-card">
-                <div class="pillar-icon" style="color: var(--warning);">⚡</div>
+                <div class="pillar-icon" style="color: #10B981; box-shadow: 0 0 14px rgba(16, 185, 129, 0.25); border-color: rgba(16, 185, 129, 0.3);">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                </div>
                 <div>
                     <div class="pillar-title">Adaptive Mascot Coach</div>
                     <div class="pillar-desc">Dynamic personality with 6 emotional states that cheer PRs, time rest intervals, and analyze trends.</div>
@@ -164,7 +236,14 @@
             </div>
 
             <div class="pillar-card">
-                <div class="pillar-icon" style="color: var(--purple);">📐</div>
+                <div class="pillar-icon" style="color: #A855F7; box-shadow: 0 0 14px rgba(168, 85, 247, 0.25); border-color: rgba(168, 85, 247, 0.3);">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="2" width="16" height="20" rx="2"/>
+                        <line x1="8" y1="6" x2="16" y2="6"/>
+                        <line x1="16" y1="14" x2="16" y2="18"/>
+                        <path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/>
+                    </svg>
+                </div>
                 <div>
                     <div class="pillar-title">Calibrated Olympic Math</div>
                     <div class="pillar-desc">Exact color-coded plate loading diagrams and US Navy tape-measure circumference calculations.</div>
@@ -179,20 +258,53 @@
             <span class="section-tag">Interactive Infographic • Coach System</span>
             <h2 class="section-title">An Emotion-Aware Trainer in Your Pocket</h2>
             <p class="section-subtitle">
-                Most gym apps are lifeless spreadsheets. SoloGym features an adaptive mascot trainer that visually updates its expression and verbal cues based on your session progress, rest timer, and progressive overload breakthroughs.
+                Most gym apps are lifeless spreadsheets. SoloGym features an adaptive mascot trainer with customizable personas (Rex, Maya, Iron, Zen) that visually updates its expression and verbal cues based on your session progress, rest timer, and progressive overload breakthroughs.
             </p>
+
+            <!-- Personas Selection Row (App Consistent) -->
+            <div style="margin-bottom: 30px;">
+                <div style="font-size: 13px; font-weight: 800; color: #E2E8F0; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                    <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--neon-green);"></span>
+                    SELECT TRAINER PERSONA (From App Settings)
+                </div>
+
+                <div class="persona-cards-list">
+                    @foreach ($personas as $idx => $p)
+                        <div class="persona-item-card {{ $idx === 0 ? 'active' : '' }}"
+                             data-id="{{ $p['id'] }}"
+                             data-name="{{ $p['name'] }}"
+                             data-tag="{{ $p['tag'] }}"
+                             data-greeting="{{ $p['greeting'] }}"
+                             data-quote="{{ $p['quote'] }}"
+                             data-color="{{ $p['primaryColor'] }}"
+                             data-image="{{ asset($p['image']) }}">
+                            <img src="{{ asset($p['image']) }}" alt="{{ $p['name'] }}" class="persona-avatar-circle" style="border-color: {{ $p['primaryColor'] }};">
+                            <div style="flex:1;">
+                                <div style="display:flex; align-items:center; gap:6px;">
+                                    <span style="font-size:14px; font-weight:bold; color:#FFFFFF;">{{ $p['name'] }}</span>
+                                    <span style="font-size:10px; font-weight:bold; color:{{ $p['primaryColor'] }}; background:{{ $p['primaryColor'] }}20; padding:1px 6px; border-radius:4px;">{{ $p['tag'] }}</span>
+                                </div>
+                                <div style="font-size:11.5px; color:var(--text-secondary); margin-top:2px;">{{ $p['title'] }}</div>
+                            </div>
+                            <div class="persona-check" style="color: {{ $p['primaryColor'] }}; font-weight:bold; font-size:16px;">
+                                {{ $idx === 0 ? '✓' : '○' }}
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
 
             <div class="mascot-showcase-card">
                 <div class="mascot-avatar-view">
                     <img id="mascot-display-img" src="{{ asset('assets/images/mascot/mascot_welcoming.jpg') }}" alt="Mascot Persona" class="mascot-large-img">
                     <div>
-                        <span id="mascot-state-tag" class="mascot-badge-tag">App Launch Greeting</span>
+                        <span id="mascot-state-tag" class="mascot-badge-tag">Coach Rex • 🔥 Beast Mode</span>
                     </div>
                 </div>
 
                 <div class="mascot-content-view">
                     <div style="font-size: 13px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 10px;">
-                        Interactive Emotion Simulator (Click to preview states):
+                        Interactive Emotion & Workout State Simulator:
                     </div>
 
                     <div class="mascot-state-tabs">
@@ -215,8 +327,8 @@
 
                     <div class="mascot-stats-grid">
                         <div class="m-stat">
-                            <div class="st-label">Personality Modes</div>
-                            <div class="st-val">Rex, Kai, Chloe</div>
+                            <div class="st-label">Personas</div>
+                            <div class="st-val">Rex, Maya, Iron, Zen</div>
                         </div>
                         <div class="m-stat">
                             <div class="st-label">Dynamic States</div>
@@ -582,8 +694,8 @@
             <p style="margin-bottom: 8px;">
                 SoloGym is a MoonDev open initiative designed for lifters who prioritize joint longevity, privacy, and evidence-based overload.
             </p>
-            <p style="color: var(--text-muted); font-size: 11px;">
-                &copy; {{ date('Y') }} SoloGym. Built with Laravel & Flutter. 100% Offline-First.
+            <p style="color: var(--text-muted); font-size: 12px; font-weight: 500;">
+                &copy; {{ date('Y') }} SoloGym by MoonDev
             </p>
         </div>
     </footer>

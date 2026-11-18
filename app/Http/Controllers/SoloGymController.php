@@ -63,6 +63,57 @@ class SoloGymController extends Controller
             ]
         ];
 
+        $personas = [
+            [
+                'id' => 'rex',
+                'name' => 'Coach Rex',
+                'tag' => '🔥 Beast Mode',
+                'title' => 'The High-Energy Hype Beast',
+                'primaryColor' => '#00E676',
+                'accentColor' => '#FF9100',
+                'image' => 'assets/images/mascot/mascot_active.jpg',
+                'greeting' => 'Rise and conquer! Today is a day for personal records. Let’s get after it!',
+                'quote' => 'One more rep than your mind wants to give—that is where champions live!',
+                'tip' => 'Explode on concentric, fight the negative on the way down!'
+            ],
+            [
+                'id' => 'maya',
+                'name' => 'Coach Maya',
+                'tag' => '📐 Science & Safety',
+                'title' => 'Biomechanics & Form Specialist',
+                'primaryColor' => '#38BDF8',
+                'accentColor' => '#818CF8',
+                'image' => 'assets/images/mascot/mascot_analyzing.jpg',
+                'greeting' => 'Welcome! A fresh session to practice optimal motor unit recruitment and joint safety.',
+                'quote' => 'Quality over quantity. 8 clinical reps beats 12 ego curls every single time.',
+                'tip' => 'Control the eccentric for 2 to 3 seconds for 40% greater hypertrophy stimulus.'
+            ],
+            [
+                'id' => 'iron',
+                'name' => 'Coach Iron',
+                'tag' => '🛡️ Pure Discipline',
+                'title' => 'Old-School Discipline Veteran',
+                'primaryColor' => '#10B981',
+                'accentColor' => '#94A3B8',
+                'image' => 'assets/images/mascot/mascot_confident.jpg',
+                'greeting' => 'The barbell doesn’t care about excuses. Time to show up and execute clean work.',
+                'quote' => 'Discipline outlasts motivation every single day of the year. Respect the craft.',
+                'tip' => 'Never compromise spinal neutrality for 5 extra kilos. Ever.'
+            ],
+            [
+                'id' => 'zen',
+                'name' => 'Coach Zen',
+                'tag' => '🌿 Mind & Recovery',
+                'title' => 'Mind-Muscle & Recovery Master',
+                'primaryColor' => '#A855F7',
+                'accentColor' => '#EC4899',
+                'image' => 'assets/images/mascot/mascot_welcoming.jpg',
+                'greeting' => 'Take a deep breath and connect your mind to your body. Today is about intentional movement.',
+                'quote' => 'Your muscle cannot contract what your nervous system cannot feel. Focus inside.',
+                'tip' => 'Growth happens during recovery and sleep, not during the workout. Nourish your body.'
+            ],
+        ];
+
         $mascotStates = [
             [
                 'id' => 'welcoming',
@@ -120,6 +171,7 @@ class SoloGymController extends Controller
             'apkSha256',
             'downloadCount',
             'literature',
+            'personas',
             'mascotStates'
         ));
     }
