@@ -698,10 +698,10 @@
             </div>
 
             <p style="margin-bottom: 8px;">
-                SoloGym is a MoonDev open initiative designed for lifters who prioritize joint longevity, privacy, and evidence-based overload.
+                SoloGym is a <a href="https://xmoon0028.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--neon-green); text-decoration: none; font-weight: 700;">MoonDev</a> open initiative designed for lifters who prioritize joint longevity, privacy, and evidence-based overload.
             </p>
             <p style="color: var(--text-muted); font-size: 12px; font-weight: 500;">
-                &copy; {{ date('Y') }} SoloGym by MoonDev
+                &copy; {{ date('Y') }} SoloGym by <a href="https://xmoon0028.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--neon-green); text-decoration: none; font-weight: 700;">MoonDev</a>
             </p>
         </div>
     </footer>

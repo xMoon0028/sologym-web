@@ -1146,6 +1146,11 @@ body {
     color: var(--neon-green);
 }
 
+.footer a:hover {
+    color: #1DF888 !important;
+    text-shadow: 0 0 10px rgba(0, 230, 118, 0.5);
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .hero-grid {
